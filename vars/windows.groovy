@@ -1,7 +1,7 @@
 
-def call(Closure body){
+def call(body){
     node('windows'){
-        body()
+        //body()
         echo 'windows body '
     }
 }
