@@ -1,8 +1,10 @@
 #!/usr/bin/env groovy
 
 def call(Closure body){
-    node('Publish'){
+    echo 'Calling Publish'
+    node {
+        stage('Pre publish stage')
         echo 'Inside publish node........................'
     }
-    echo 'Calling Publish'
+    body()
 }
