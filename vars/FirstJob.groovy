@@ -11,6 +11,7 @@ def call(body){
         echo "Inside node ${config.nodeName}"
         stage('Sub Stage') {
             echo 'A stage inside FirstJob'
+            echo 'Printing env ${env}'
         }
     }
 }
