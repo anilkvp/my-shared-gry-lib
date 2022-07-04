@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(body){
+def call(Closure body){
     node('Publish'){
         echo 'Inside publish node........................'
     }
